@@ -32,6 +32,7 @@ namespace GanzoAgazapado
 		{
 			while (true) {
 				yield return source;
+				Debug.Log("repeating");
 			}
 		}
 	}

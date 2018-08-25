@@ -14,21 +14,12 @@ namespace GanzoAgazapado
 
 		public bool autoFire = false;
 
-		bool activated;
-
 		public void Fire()
 		{
-			if (!activated)
-				return;
-
 			var bullet = FireBullet();
 			bullet.name = "RegularBullet";
 			gunAnimator.SetTrigger("Shoot");
 		}
-
-		public void Activate() { activated = true; }
-		
-		public void Deactivate() { activated = false; }
 		
 		Bullet FireBullet()
 		{

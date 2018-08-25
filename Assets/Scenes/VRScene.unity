@@ -424,7 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1082843178}
   gameLogic: {fileID: 261819859}
-  shootLogic: {fileID: 1020891140}
+  gun: {fileID: 492933773}
 --- !u!4 &102071015
 Transform:
   m_ObjectHideFlags: 0
@@ -1282,8 +1282,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalRound: 4
-  reloadTime: 3
+  reloadTime: 2.5
   shootLogic: {fileID: 1020891140}
+  charges:
+  - {fileID: 1408679279}
+  - {fileID: 873836587}
+  - {fileID: 1119122453}
+  - {fileID: 1647093040}
+  chargedMaterial: {fileID: 2100000, guid: c935998db8aea45ff8deda6bcd2e3aa4, type: 2}
+  emptyMaterial: {fileID: 2100000, guid: c86fc238bc7ea4f5bb0aff5f929765bf, type: 2}
 --- !u!1 &499165156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1877,11 @@ Transform:
   m_Father: {fileID: 1305493030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &873836587 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23435779562943480, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
 --- !u!1 &875911464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2559,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ced0af099a6734f8a51a81b0834279, type: 2}
   m_IsPrefabAsset: 0
+--- !u!23 &1119122453 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23132588771572140, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
 --- !u!114 &1175508409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114066099082718488, guid: a8efe3ab7d999eb4ba8c0410ebd86787,
@@ -3162,6 +3179,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401558150}
   m_CullTransparentMesh: 0
+--- !u!23 &1408679279 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23488846256125654, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
 --- !u!1 &1435579945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,6 +3400,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1884667690675414, guid: a8efe3ab7d999eb4ba8c0410ebd86787,
     type: 2}
   m_PrefabInternal: {fileID: 1341028157}
+--- !u!23 &1647093040 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23984202638292234, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
 --- !u!1 &1687916841
 GameObject:
   m_ObjectHideFlags: 0
