@@ -25,6 +25,10 @@ namespace GanzoAgazapado
             scene.player.transform.position = playerStart.transform.position;
             scene.player.transform.forward = playerStart.transform.forward;
             scene.gameLogic.reloadAction = ReloadAction;
+            var camera = GameObject.FindObjectOfType<Canvas>();
+            camera.worldCamera = scene.VRCamera;
+            camera.planeDistance = 1;
+
         }
     }
 }

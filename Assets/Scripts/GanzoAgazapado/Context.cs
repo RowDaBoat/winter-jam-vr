@@ -10,7 +10,14 @@ namespace GanzoAgazapado
 		public Player player;
 		public Transform plans;
 
-		void Start()
+		
+		void Awake()
+		{
+			var scene = VRScene.Instance;
+			Invoke("InitializeGame", 0.1f);
+		}
+
+		void InitializeGame()
 		{
 			var enemyFactory = new EnemyFactory(player, loop);
 			var shootLogic = VRScene.Instance.shootLogic;
