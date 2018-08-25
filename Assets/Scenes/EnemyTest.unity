@@ -703,9 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lose: {fileID: 769043958}
   player: {fileID: 648745952}
-  plans:
-  - {fileID: 1702589001}
-  - {fileID: 87275000}
+  plans: {fileID: 539704587}
 --- !u!4 &1163808830
 Transform:
   m_ObjectHideFlags: 0

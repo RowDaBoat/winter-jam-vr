@@ -7,15 +7,14 @@ namespace GanzoAgazapado
 	{
 		public Lose lose;
 		public Player player;
-		public SpawnPlan[] plans;
-
+		public Transform plans;
+		
 		void Start()
 		{
 			var enemyFactory = new EnemyFactory(player, lose);
 
-			foreach (var plan in plans) {
+			foreach (var plan in plans.GetComponentsInChildren<SpawnPlan>())
 				plan.Configure(enemyFactory);
-			}
 		}
 	}
 }
