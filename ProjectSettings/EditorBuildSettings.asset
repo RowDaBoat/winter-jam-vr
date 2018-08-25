@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/EnemyTest Bruno.unity
+    guid: b23a31f2354ec44a5b57c0a973581930
+  - enabled: 1
     path: Assets/Scenes/ScenarioScene.unity
     guid: d1d82fb308b40b44989c549b606b3109
   - enabled: 1
