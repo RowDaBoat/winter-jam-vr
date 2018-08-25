@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 522adcaad5761bc4b80609d7557689e9
+=======
+guid: 139300477771c4487b9a50cf33201177
+>>>>>>> Add shooters, chasers, and lose logic for shooters
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
