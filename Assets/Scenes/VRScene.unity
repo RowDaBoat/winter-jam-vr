@@ -974,7 +974,7 @@ MonoBehaviour:
   gun: {fileID: 873367524}
   bulletPrefab: {fileID: 114499665221783102, guid: fca3265d0b739db4a803ff2d6895df4c,
     type: 2}
-  velocity: 3
+  velocity: 15
   cooldown: 0.1
   cooldownCounter: 0
   autoFire: 0

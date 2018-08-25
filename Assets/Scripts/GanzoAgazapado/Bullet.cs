@@ -9,7 +9,7 @@ namespace GanzoAgazapado
 
 	    void OnCollisionEnter(Collision other)
 	    {
-		    var enemy = other.gameObject.GetComponent<Enemy>();
+		    var enemy = other.gameObject.GetComponentInParent<Enemy>();
 
 		    if (enemy != null)
 		    	Destroy(gameObject);

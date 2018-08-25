@@ -11,7 +11,7 @@ namespace GanzoAgazapado.Enemies
 
 		static Vector3 Forward(Vector3 position, Transform player) => (player.position - position).normalized;
 
-		void OnCollisionEnter(Collision other)
+		public void DelegateOnCollisionEnter(Collision other)
 		{
 			var bullet = other.gameObject.GetComponent<Bullet>();
 
