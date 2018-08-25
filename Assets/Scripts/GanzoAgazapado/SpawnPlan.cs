@@ -18,6 +18,8 @@ namespace GanzoAgazapado
 	{
 		public float planStartTime;
 		public Spawn[] plan;
+		public bool repeat;
+		
 		Loop loop;
 
 		EnemyFactory enemyFactory;
@@ -35,10 +37,12 @@ namespace GanzoAgazapado
 		{
 			yield return new WaitForSeconds(planStartTime);
 
-			foreach (var spawn in plan) {
-				enemyFactory.Spawn(spawn.enemy, spawn.spawner.transform.position);
-				yield return new WaitForSeconds(spawn.nextTime);
-			}
+			do {
+				foreach (var spawn in plan) {
+					enemyFactory.Spawn(spawn.enemy, spawn.spawner.transform.position);
+					yield return new WaitForSeconds(spawn.nextTime);
+				}
+			} while (repeat);
 		}
 	}
 }
