@@ -7,7 +7,12 @@ namespace GanzoAgazapado
     public class GameController : MonoBehaviour
     {
         public GameObject playerStart;
-        
+      
+	    public void ReloadAction()
+	    {
+		    SceneManager.LoadScene(gameObject.scene.name);
+	    }
+  
         void Awake()
         {
             var scene = VRScene.Instance;
@@ -20,11 +25,6 @@ namespace GanzoAgazapado
             scene.player.transform.position = playerStart.transform.position;
             scene.player.transform.forward = playerStart.transform.forward;
             scene.gameLogic.reloadAction = ReloadAction;
-        }
-
-        private void ReloadAction()
-        {
-           SceneManager.LoadScene(this.gameObject.scene.name);
         }
     }
 }

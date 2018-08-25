@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using static GanzoAgazapado.CoroutineUtils;
 
 namespace GanzoAgazapado.Enemies
 {
@@ -35,24 +36,10 @@ namespace GanzoAgazapado.Enemies
 			Color = color2;
 		}
 
-		IEnumerator Wait(float time)
-		{
-			yield return new WaitForSeconds(time);
-		}
-
 		IEnumerator Shoot()
 		{
 			damage();
 			yield return 0;
-		}
-	}
-
-	public static class CoroutinesEx
-	{
-		public static IEnumerator Then(this IEnumerator first, IEnumerator then)
-		{
-			yield return first;
-			yield return then;
 		}
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using GanzoAgazapado.Enemies;
+using GanzoAgazapado.GameLoop;
 using UnityEngine;
 
 namespace GanzoAgazapado
@@ -16,19 +17,18 @@ namespace GanzoAgazapado
 	public class SpawnPlan : MonoBehaviour
 	{
 		public float planStartTime;
-		public Transform player;
 		public Spawn[] plan;
+		Loop loop;
 
 		EnemyFactory enemyFactory;
+		Coroutine run;
 
-		public void Configure(EnemyFactory enemyFactory)
+		public void Configure(EnemyFactory enemyFactory, Loop loop)
 		{
 			this.enemyFactory = enemyFactory;
-		}
-		
-		void Start()
-		{
-			StartCoroutine(Run());
+
+			loop.OnReady += () => run = StartCoroutine(Run());
+			loop.OnStop += () => StopCoroutine(run);
 		}
 
 		IEnumerator Run()
