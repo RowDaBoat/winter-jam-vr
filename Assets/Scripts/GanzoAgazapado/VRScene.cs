@@ -6,13 +6,10 @@ namespace GanzoAgazapado
 {
     public class VRScene : MonoBehaviour
     {
-        public GameObject player;
+	    private static VRScene instance;
         
-        
-        
-        
-        
-        private static VRScene instance;
+	    public GameObject player;
+
         public static VRScene Instance
         {
             get

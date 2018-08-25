@@ -8,7 +8,7 @@ namespace GanzoAgazapado
 
         public void Start()
         {
-            GameObject.Destroy(this.gameObject, time);
+            Destroy(gameObject, time);
         }
     }
 }
