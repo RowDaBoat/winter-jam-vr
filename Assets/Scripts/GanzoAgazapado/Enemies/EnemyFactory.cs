@@ -22,11 +22,11 @@ namespace GanzoAgazapado.Enemies
 			Chaser chaser;
 
 			if ((shooter = enemy.GetComponent<Shooter>()) != null) {
-				shooter.Configure(loop.Lose);
+				shooter.Configure(loop);
 			}
 
 			if ((chaser = enemy.GetComponent<Chaser>()) != null) {
-				chaser.Configure(loop.Lose, player);
+				chaser.Configure(player, loop);
 			}
 		}
 	}

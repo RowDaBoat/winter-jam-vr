@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GanzoAgazapado.GameLoop;
 using UnityEngine;
 
 namespace GanzoAgazapado.Enemies
@@ -10,13 +11,12 @@ namespace GanzoAgazapado.Enemies
 		public float speed = 2;
 
 		Vector3 velocity;
-		Action damage;
 		Player player;
 
-		public void Configure(Action damage, Player player)
+		public void Configure(Player player, Loop loop)
 		{
-			this.damage = damage;
 			this.player = player;
+			Configure(loop);
 		}
 
 		void Start()
@@ -31,7 +31,7 @@ namespace GanzoAgazapado.Enemies
 		{
 			while (true) {
 				if (player.CollidedWith(this))
-					damage();
+					loop.Lose();
 
 				yield return 0;
 			}

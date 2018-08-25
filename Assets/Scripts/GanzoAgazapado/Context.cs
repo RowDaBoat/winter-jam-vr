@@ -9,14 +9,17 @@ namespace GanzoAgazapado
 		public Loop loop;
 		public Player player;
 		public Transform plans;
-		public GameController controller;
 
 		void Start()
 		{
 			var enemyFactory = new EnemyFactory(player, loop);
+			var shootLogic = VRScene.Instance.shootLogic;
 
 			foreach (var plan in plans.GetComponentsInChildren<SpawnPlan>())
 				plan.Configure(enemyFactory, loop);
+
+			loop.OnReady += shootLogic.Activate;
+			loop.OnStop += shootLogic.Deactivate;
 		}
 	}
 }

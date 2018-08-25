@@ -10,6 +10,7 @@ namespace GanzoAgazapado
         
 	    public GameObject player;
         public GameLogic gameLogic;
+	    public ShootLogic shootLogic;
 
         public static VRScene Instance
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GanzoAgazapado.GameLoop;
 using UnityEngine;
 using static GanzoAgazapado.CoroutineUtils;
 
@@ -13,13 +14,7 @@ namespace GanzoAgazapado.Enemies
 		public Renderer renderer;
 		
 		Color Color { set { renderer.material.color = value; } }
-		Action damage;
-		
-		public void Configure(Action damage)
-		{
-			this.damage = damage;
-		}
-		
+
 		void Start()
 		{
 			StartCoroutine(Wait(waitTime).Then(Shoot()));
@@ -38,7 +33,7 @@ namespace GanzoAgazapado.Enemies
 
 		IEnumerator Shoot()
 		{
-			damage();
+			loop.Lose();
 			yield return 0;
 		}
 	}

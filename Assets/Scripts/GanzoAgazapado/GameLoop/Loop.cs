@@ -16,13 +16,17 @@ namespace GanzoAgazapado.GameLoop
 		public event Action OnReady = delegate {};
 		public event Action OnStop = delegate {};
 
-		public void StartGame() => StartCoroutine(StartRoutine());
+		int score = 0;
 
+		public void StartGame() => StartCoroutine(StartRoutine());
+		
 		public void Lose()
 		{
-			ShowDimmer(redDimmer, "Ded Ganz!");
+			ShowDimmer(redDimmer, "Ded Ganz!\n\nScore: " + score);
 			OnStop();
 		}
+
+		public void AddScore() => score++;
 
 		void Start() => StartGame();
 

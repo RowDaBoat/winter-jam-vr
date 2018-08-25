@@ -1250,6 +1250,23 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_text
+      value: 'Agazapated Ganz!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d9ff74cec474ba1ad91f903e456907, type: 2}
   m_IsPrefabAsset: 0
@@ -1742,6 +1759,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 5
     spawner: {fileID: 843477244}
+  repeat: 1
 --- !u!1 &843477243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,10 +2970,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12f0aaaee6541c49d87dcaf4a751437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loop: {fileID: 707009302}
+  loop: {fileID: 1594229096}
   player: {fileID: 334258372}
   plans: {fileID: 539704587}
-  controller: {fileID: 913065348}
 --- !u!4 &1163808830
 Transform:
   m_ObjectHideFlags: 0
@@ -3791,6 +3808,12 @@ Transform:
   m_Father: {fileID: 1543078297}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1594229096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114280056955567658, guid: 10dac558de5cc4a3c8318c742ebf923e,
+    type: 2}
+  m_PrefabInternal: {fileID: 69096878}
+  m_Script: {fileID: 11500000, guid: 2a93f0840db34e058e446aee65d019e7, type: 3}
 --- !u!1 &1672024582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,6 +4013,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 5
     spawner: {fileID: 1775591127}
+  repeat: 0
 --- !u!4 &1702589002
 Transform:
   m_ObjectHideFlags: 0
