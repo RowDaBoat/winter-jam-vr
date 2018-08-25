@@ -9,6 +9,7 @@ namespace GanzoAgazapado
 	    private static VRScene instance;
         
 	    public GameObject player;
+        public GameLogic gameLogic;
 
         public static VRScene Instance
         {
