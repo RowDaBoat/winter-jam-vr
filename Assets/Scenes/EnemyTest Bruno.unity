@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1250,6 +1250,23 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_text
+      value: 'Agazapated Ganz!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798252307702152, guid: 11d9ff74cec474ba1ad91f903e456907,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d9ff74cec474ba1ad91f903e456907, type: 2}
   m_IsPrefabAsset: 0
@@ -1742,6 +1759,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 5
     spawner: {fileID: 843477244}
+  repeat: 1
 --- !u!1 &843477243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,7 +2973,6 @@ MonoBehaviour:
   loop: {fileID: 707009302}
   player: {fileID: 334258372}
   plans: {fileID: 539704587}
-  controller: {fileID: 913065348}
 --- !u!4 &1163808830
 Transform:
   m_ObjectHideFlags: 0
@@ -3990,6 +4007,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 5
     spawner: {fileID: 1775591127}
+  repeat: 0
 --- !u!4 &1702589002
 Transform:
   m_ObjectHideFlags: 0
