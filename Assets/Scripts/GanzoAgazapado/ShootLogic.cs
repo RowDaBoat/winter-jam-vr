@@ -5,6 +5,7 @@ namespace GanzoAgazapado
 	public class ShootLogic : MonoBehaviour
 	{
 		public GameObject gun;
+		public Animator gunAnimator;
 		public Bullet bulletPrefab;
 		public float velocity;
 
@@ -22,6 +23,7 @@ namespace GanzoAgazapado
 
 			var bullet = FireBullet();
 			bullet.name = "RegularBullet";
+			gunAnimator.SetTrigger("Shoot");
 		}
 
 		public void Activate() { activated = true; }

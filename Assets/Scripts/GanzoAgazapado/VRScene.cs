@@ -24,7 +24,7 @@ namespace GanzoAgazapado
                         SceneManager.LoadScene("VRScene", LoadSceneMode.Additive);
                     }
 
-                    instance = GameObject.FindObjectOfType<VRScene>();
+                    instance = FindObjectOfType<VRScene>();
                 }
 
                 return instance;
