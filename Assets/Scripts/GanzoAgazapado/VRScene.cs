@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using VRTK.Core.Tracking.CameraRig;
 
 namespace GanzoAgazapado
 {
@@ -23,13 +24,17 @@ namespace GanzoAgazapado
                         SceneManager.LoadScene("VRScene", LoadSceneMode.Additive);
                     }
 
-                    instance = GameObject.FindObjectOfType<VRScene>();
+                    instance = FindObjectOfType<VRScene>();
                 }
 
                 return instance;
             }
         }
-        
+
+        public Camera VRCamera
+        {
+            get { return GameObject.FindObjectOfType<LinkedAliasAssociationCollection>().HeadsetCamera; }
+        }
         
     }
 }
