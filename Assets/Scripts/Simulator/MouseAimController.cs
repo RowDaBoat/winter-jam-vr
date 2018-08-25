@@ -18,23 +18,21 @@ namespace GanzoAgazapado.Simulator
             oldMousePosition = Input.mousePosition;
         }
 
+        private void Start()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         private void Update()
         {
-            var newPosition = Input.mousePosition;
-            var delta = newPosition - oldMousePosition;
-            oldMousePosition = newPosition;
-
-            var horizontalRotation = delta.x * scale.x;
-            var verticalRotation = delta.y * scale.y;
+            var horizontalRotation = Input.GetAxis("Mouse X") * scale.x;
+            var verticalRotation = Input.GetAxis("Mouse Y") * scale.y;
 
             var rotation = head.transform.localEulerAngles;
             rotation = rotation + new Vector3(verticalRotation, horizontalRotation, 0);
 
             head.transform.localEulerAngles = rotation;
             hand.transform.localEulerAngles = rotation;
-
-            //  head.transform.Rotate(Vector3.up, horizontalRotation);
-            //  head.transform.Rotate(Vector3.right, verticalRotation);
         }
     }
 }
