@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4968600601940184}
   - component: {fileID: 114116126126410310}
   m_Layer: 0
-  m_Name: Chaser3
+  m_Name: ChaserLVL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAlive: 30
-  speed: 9
+  speed: 6
 --- !u!114 &114965887392419028
 MonoBehaviour:
   m_ObjectHideFlags: 1
