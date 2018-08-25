@@ -6,7 +6,7 @@ namespace GanzoAgazapado
 	public class Context : MonoBehaviour
 	{
 		public Lose lose;
-		public Transform player;
+		public Player player;
 		public SpawnPlan[] plans;
 
 		void Start()

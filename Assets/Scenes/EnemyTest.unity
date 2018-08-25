@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12f0aaaee6541c49d87dcaf4a751437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lose: {fileID: 0}
+  lose: {fileID: 769043958}
   player: {fileID: 648745951}
   plans:
   - {fileID: 1702589001}
