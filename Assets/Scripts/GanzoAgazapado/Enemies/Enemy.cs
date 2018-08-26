@@ -13,7 +13,8 @@ namespace GanzoAgazapado.Enemies
 		public Transform fxDeathPosition;
 
 		protected Loop loop;
-
+		bool dead;
+		
 		public static Enemy Spawn(Enemy prefab, Vector3 position, Transform player) =>
 			Instantiate(prefab, position, Rotation(Forward(position, player)));
 
@@ -26,11 +27,13 @@ namespace GanzoAgazapado.Enemies
 		{
 			var bullet = other.gameObject.GetComponent<Bullet>();
 
-			if (bullet != null) {
+			if (bullet != null && !dead) {
 				if (fxDeath != null)
 				{
 					GameObject.Instantiate(fxDeath, fxDeathPosition.position, Quaternion.identity);
 				}
+
+				dead = true;
 				OnDeath();
 				Destroy(gameObject);
 				loop.AddScore();

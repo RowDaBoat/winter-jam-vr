@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -198,6 +198,12 @@ Prefab:
 --- !u!114 &15549537 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114731735098569910, guid: b7b08d59b1d947a4b8252c99ce994d14,
+    type: 2}
+  m_PrefabInternal: {fileID: 15549536}
+  m_Script: {fileID: 11500000, guid: 04ac9c21bec040b43ac6dab0c5b96304, type: 3}
+--- !u!114 &15549538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114371195521090330, guid: b7b08d59b1d947a4b8252c99ce994d14,
     type: 2}
   m_PrefabInternal: {fileID: 15549536}
   m_Script: {fileID: 11500000, guid: 04ac9c21bec040b43ac6dab0c5b96304, type: 3}
@@ -1284,6 +1290,7 @@ Transform:
   m_Children:
   - {fileID: 499353604}
   - {fileID: 1195862766}
+  - {fileID: 1156562384}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2620,6 +2627,76 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 23132588771572140, guid: 12f38f9c031e07d48bb859f32e0d069b,
     type: 2}
   m_PrefabInternal: {fileID: 1754630277}
+--- !u!1 &1156562383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156562384}
+  - component: {fileID: 1156562385}
+  m_Layer: 0
+  m_Name: Pad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156562384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156562383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 449324391}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156562385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156562383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd299fedf620074b8e4ce0978a7f425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultValue: 0
+  Activated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 250920559}
+        m_MethodName: UsePowerup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.Core.Action.BooleanAction+UnityEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.Core.Action.BooleanAction+UnityEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.Core.Action.BooleanAction+UnityEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  sources:
+  - {fileID: 1175508409}
+  - {fileID: 15549538}
 --- !u!114 &1175508409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114066099082718488, guid: a8efe3ab7d999eb4ba8c0410ebd86787,
