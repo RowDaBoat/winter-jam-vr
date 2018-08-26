@@ -2003,6 +2003,7 @@ Transform:
   - {fileID: 819447260}
   - {fileID: 1183331269}
   - {fileID: 895811327}
+  - {fileID: 767139580}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2762,6 +2763,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4553992109319612, guid: 19ab65f6b1c4e48e9b59ed82e59fc298,
     type: 2}
   m_PrefabInternal: {fileID: 765576306}
+--- !u!1 &767139579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767139580}
+  - component: {fileID: 767139581}
+  m_Layer: 0
+  m_Name: Wave 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &767139580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767139579}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 539704587}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &767139581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767139579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b205dd82c97f4af8bb7df3754c9e79ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planStartTime: 140
+  plan:
+  - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
+    nextTime: 1
+    spawner: {fileID: 202107007}
+  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+    nextTime: 2
+    spawner: {fileID: 1234325354}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
+    nextTime: 5
+    spawner: {fileID: 1044787850}
+  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+    nextTime: 1
+    spawner: {fileID: 843477244}
+  - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
+    nextTime: 2
+    spawner: {fileID: 1728163568}
+  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+    nextTime: 5
+    spawner: {fileID: 202107007}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
+    nextTime: 1
+    spawner: {fileID: 1883346268}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
+    nextTime: 2
+    spawner: {fileID: 1044787850}
+  - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
+    nextTime: 5
+    spawner: {fileID: 843477244}
+  - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
+    nextTime: 1
+    spawner: {fileID: 1775591127}
+  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+    nextTime: 2
+    spawner: {fileID: 1728163568}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
+    nextTime: 5
+    spawner: {fileID: 398970706}
+  repeat: 1
 --- !u!1001 &777126491
 Prefab:
   m_ObjectHideFlags: 0
@@ -3179,7 +3259,7 @@ MonoBehaviour:
   - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 6
     spawner: {fileID: 398970706}
-  repeat: 1
+  repeat: 0
 --- !u!4 &910247135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4156258412980888, guid: 553bd7318cfff4646bd630f87b65d443,
