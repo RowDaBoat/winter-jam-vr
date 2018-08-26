@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7698,79 +7698,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 23483951657497996, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23902538072983414, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23522159694167864, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23379050686404402, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23195384601307092, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23088040494901514, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23655421582936360, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23066565415276234, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280263738211104, guid: 67ff80c73af924ec0b829dda070ae1e8,
-        type: 2}
-      propertyPath: planStartTime
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 1467113871799928, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488413344739980, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1673481451098012, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1166004807217208, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1849802795237308, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276607601097386, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114604777340482, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67ff80c73af924ec0b829dda070ae1e8, type: 2}
   m_IsPrefabAsset: 0
@@ -10145,36 +10072,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4137212620624748, guid: 78ba52fb8c47345a3822ac2bf9acb4cd,
     type: 2}
   m_PrefabInternal: {fileID: 1702618862}
---- !u!1 &1705942417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1416749535145850, guid: 55f5fd398b13d4628bc839570d215f3f,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1705942418}
-  m_Layer: 0
-  m_Name: TechoParte
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1705942418
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4220590858392180, guid: 55f5fd398b13d4628bc839570d215f3f,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705942417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.458849, y: -0.5958328, z: 22.498589}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1709430162
 Prefab:
   m_ObjectHideFlags: 0
