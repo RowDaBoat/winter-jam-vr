@@ -31,6 +31,12 @@ namespace GanzoAgazapado
 			if (kills == requiredKills)
 				StartCoroutine(BulletTime());
 		}
+
+		void Awake()
+		{
+			timeScaleBackup = Time.timeScale;
+			fixedDeltaTimeBackup = Time.fixedDeltaTime;
+		}
 		
 		void UpdateMeter()
 		{
@@ -39,9 +45,6 @@ namespace GanzoAgazapado
 
 		IEnumerator BulletTime()
 		{
-			timeScaleBackup = Time.timeScale;
-			fixedDeltaTimeBackup = Time.fixedDeltaTime;
-
 			Time.timeScale = timeScale;
 			Time.fixedDeltaTime = timeScale;
 
