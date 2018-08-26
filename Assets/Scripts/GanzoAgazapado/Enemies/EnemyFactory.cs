@@ -14,9 +14,9 @@ namespace GanzoAgazapado.Enemies
 			this.loop = loop;
 		}
 
-		public Enemy Spawn(Enemy spawnEnemy, Vector3 transformPosition)
+		public Enemy Spawn(Enemy spawnEnemy, Spawner spawner)
 		{
-			var enemy = Enemy.Spawn(spawnEnemy, transformPosition, player.transform);
+			var enemy = spawner.Spawn(spawnEnemy, player.transform);
 
 			Shooter shooter;
 			Chaser chaser;
