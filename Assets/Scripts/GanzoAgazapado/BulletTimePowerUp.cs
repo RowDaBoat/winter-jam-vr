@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GanzoAgazapado
 {
@@ -9,6 +10,7 @@ namespace GanzoAgazapado
 		public float timeScale;
 		public int requiredKills = 10;
 		public Gun gun;
+		public Image meter;
 
 		int kills;
 
@@ -16,6 +18,13 @@ namespace GanzoAgazapado
 		{
 			if (++kills == requiredKills)
 				StartCoroutine(BulletTime());
+
+			UpdateMeter();
+		}
+
+		void UpdateMeter()
+		{
+			meter.fillAmount = (float)kills / requiredKills;
 		}
 
 		IEnumerator BulletTime()
@@ -33,6 +42,7 @@ namespace GanzoAgazapado
 			gun.NormalMode();
 
 			kills = 0;
+			UpdateMeter();
 			Time.timeScale = backup;
 			Time.fixedDeltaTime = bfdt;
 		}
