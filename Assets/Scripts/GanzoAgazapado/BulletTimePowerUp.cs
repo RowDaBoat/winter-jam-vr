@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using VRTK.Core.Data.Attribute;
 
 namespace GanzoAgazapado
 {
@@ -16,13 +17,19 @@ namespace GanzoAgazapado
 
 		public void AddKill()
 		{
-			if (++kills == requiredKills)
-				StartCoroutine(BulletTime());
+			if (kills == requiredKills)
+				return;
 
-
+			++kills;
 			UpdateMeter();
 		}
 
+		public void UsePowerup()
+		{
+			if (kills == requiredKills)
+				StartCoroutine(BulletTime());
+		}
+		
 		void UpdateMeter()
 		{
 			meter.fillAmount = (float)kills / requiredKills;
