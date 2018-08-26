@@ -2776,7 +2776,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 5
     spawner: {fileID: 114370087271529878}
-  repeat: 1
+  repeat: 0
 --- !u!114 &114806556349007610
 MonoBehaviour:
   m_ObjectHideFlags: 1
