@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4715251286639114}
   - component: {fileID: 20782009144200564}
   - component: {fileID: 81090723418951724}
+  - component: {fileID: 45589863650193542}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -109,7 +110,7 @@ Camera:
   m_GameObject: {fileID: 1433731527689592}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -141,6 +142,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!45 &45589863650193542
+Skybox:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433731527689592}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
 --- !u!81 &81090723418951724
 AudioListener:
   m_ObjectHideFlags: 1
@@ -180,5 +189,5 @@ MonoBehaviour:
   headsetVelocity: {fileID: 0}
   leftController: {fileID: 1607193703331262}
   leftControllerVelocity: {fileID: 0}
-  rightController: {fileID: 0}
+  rightController: {fileID: 1607193703331262}
   rightControllerVelocity: {fileID: 0}

@@ -2475,19 +2475,6 @@ MonoBehaviour:
   m_modelGearVrController: {fileID: 519717952}
   m_modelOculusGoController: {fileID: 761337869}
   m_controller: 33554432
---- !u!1 &992149206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1433731527689592, guid: c0ced0af099a6734f8a51a81b0834279,
-    type: 2}
-  m_PrefabInternal: {fileID: 1105103930}
---- !u!45 &992149209
-Skybox:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 992149206}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
 --- !u!1 &999009329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,11 +2759,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4265859600287234, guid: c0ced0af099a6734f8a51a81b0834279, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20782009144200564, guid: c0ced0af099a6734f8a51a81b0834279,
-        type: 2}
-      propertyPath: m_ClearFlags
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
