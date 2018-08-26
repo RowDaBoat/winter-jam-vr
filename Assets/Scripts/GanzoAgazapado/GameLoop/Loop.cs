@@ -11,6 +11,7 @@ namespace GanzoAgazapado.GameLoop
 	public class Loop : MonoBehaviour
 	{
 		public TextMeshProUGUI screenText;
+		public TextMeshProUGUI scoreText;
 		public Image initialDimmer;
 		public Image redDimmer;
 		public AudioSource music;
@@ -52,7 +53,11 @@ namespace GanzoAgazapado.GameLoop
 			music.volume = 0;
 		}
 
-		public void AddScore() => score++;
+		public void AddScore()
+		{
+			score++;
+			scoreText.text = score.ToString();
+		}
 
 		void Start() => StartGame();
 
