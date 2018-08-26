@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4968600601940184}
   - component: {fileID: 114116126126410310}
+  - component: {fileID: 114804707385109890}
   m_Layer: 0
   m_Name: Chaser
   m_TagString: Untagged
@@ -414,6 +415,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: GanzoAgazapado.CollisionForwarder+CollisionData, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114804707385109890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908767380391868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea27fa7e901c4c168858e7e8e145bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 0}
+  movementSpeed: 4
 --- !u!114 &114965887392419028
 MonoBehaviour:
   m_ObjectHideFlags: 1
