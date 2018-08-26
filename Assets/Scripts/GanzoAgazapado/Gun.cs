@@ -38,18 +38,35 @@ namespace GanzoAgazapado
 			UpdateCharges();
 		}
 
-		IEnumerator Rounds() => Wait(() => round == 0)
-			.Then(Do(() => Debug.Log("Reloading...")))
-			.Then(Wait(reloadTime))
-			.Then(Reload())
-			.Then(Do(() => Debug.Log("Reloaded!")))
-			.Then(Do(() => StartCoroutine(Rounds())));
+		IEnumerator Rounds()
+		{
+			yield return new WaitUntil(() => round == 0);
+			
+			Debug.Log("Reloading...");
+			StartCoroutine(ReloadAnim());
 
-		IEnumerator Reload()
+			yield return new WaitForSeconds(totalRound);
+			
+			Reload();
+			Debug.Log("Reloaded!");
+
+			StartCoroutine(Rounds());
+		}
+
+		IEnumerator ReloadAnim()
+		{
+			var chargeTime = reloadTime / (totalRound - 1);
+
+			for (var i = 0; i < totalRound; i++) {
+				yield return new WaitForSeconds(chargeTime);
+				charges[totalRound - i - 1].material = chargedMaterial;
+			}	
+		}
+
+		void Reload()
 		{
 			round = totalRound;
 			UpdateCharges();
-			yield return 0;
 		}
 
 		void UpdateCharges()
