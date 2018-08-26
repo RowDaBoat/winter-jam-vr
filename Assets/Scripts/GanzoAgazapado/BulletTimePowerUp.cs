@@ -14,6 +14,8 @@ namespace GanzoAgazapado
 		public Image meter;
 
 		int kills;
+		float timeScaleBackup;
+		float fixedDeltaTimeBackup;
 
 		public void AddKill()
 		{
@@ -37,8 +39,8 @@ namespace GanzoAgazapado
 
 		IEnumerator BulletTime()
 		{
-			var backup = Time.timeScale;
-			var bfdt = Time.fixedDeltaTime;
+			timeScaleBackup = Time.timeScale;
+			fixedDeltaTimeBackup = Time.fixedDeltaTime;
 
 			Time.timeScale = timeScale;
 			Time.fixedDeltaTime = timeScale;
@@ -51,8 +53,14 @@ namespace GanzoAgazapado
 
 			kills = 0;
 			UpdateMeter();
-			Time.timeScale = backup;
-			Time.fixedDeltaTime = bfdt;
+			Time.timeScale = timeScaleBackup;
+			Time.fixedDeltaTime = fixedDeltaTimeBackup;
+		}
+
+		void OnDestroy()
+		{
+			Time.timeScale = timeScaleBackup;
+			Time.fixedDeltaTime = fixedDeltaTimeBackup;
 		}
 	}
 }
