@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Runtime.CompilerServices;
 using GanzoAgazapado.GameLoop;
 using UnityEngine;
 using UnityEngine.Animations;
@@ -7,6 +8,8 @@ namespace GanzoAgazapado.Enemies
 {
 	public class Enemy : MonoBehaviour
 	{
+		public event Action OnDeath = delegate {};
+
 		protected Loop loop;
 
 		public static Enemy Spawn(Enemy prefab, Vector3 position, Transform player) =>
@@ -22,6 +25,7 @@ namespace GanzoAgazapado.Enemies
 			var bullet = other.gameObject.GetComponent<Bullet>();
 
 			if (bullet != null) {
+				OnDeath();
 				Destroy(gameObject);
 				loop.AddScore();
 			}

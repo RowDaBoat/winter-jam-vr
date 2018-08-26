@@ -425,6 +425,7 @@ MonoBehaviour:
   player: {fileID: 1082843178}
   gameLogic: {fileID: 261819859}
   gun: {fileID: 492933773}
+  bulletTimePowerUp: {fileID: 250920559}
 --- !u!4 &102071015
 Transform:
   m_ObjectHideFlags: 0
@@ -839,6 +840,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219493170}
   m_Mesh: {fileID: 4300012, guid: 84c37137326e7b943a87be7ae2a7ea19, type: 3}
+--- !u!1 &250920557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250920558}
+  - component: {fileID: 250920559}
+  m_Layer: 0
+  m_Name: BulletTimePowerUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &250920558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250920557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1490667029}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250920559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250920557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973fbe18e6c44ef295a957f2cd43f781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
+  timeScale: 0.125
+  requiredKills: 5
+  gun: {fileID: 492933773}
 --- !u!1 &261819858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3392,7 @@ Transform:
   - {fileID: 1020891139}
   - {fileID: 261819860}
   - {fileID: 492933772}
+  - {fileID: 250920558}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
