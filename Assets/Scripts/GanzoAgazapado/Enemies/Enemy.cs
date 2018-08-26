@@ -10,6 +10,7 @@ namespace GanzoAgazapado.Enemies
 	{
 		public event Action OnDeath = delegate {};
 		public GameObject fxDeath;
+		public Transform fxDeathPosition;
 
 		protected Loop loop;
 
@@ -28,7 +29,7 @@ namespace GanzoAgazapado.Enemies
 			if (bullet != null) {
 				if (fxDeath != null)
 				{
-					GameObject.Instantiate(fxDeath, this.gameObject.transform.position, Quaternion.identity);
+					GameObject.Instantiate(fxDeath, fxDeathPosition.position, Quaternion.identity);
 				}
 				OnDeath();
 				Destroy(gameObject);
