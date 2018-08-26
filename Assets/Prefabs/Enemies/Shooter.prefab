@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed5937fa8884be9b31150f28f7db576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxDeath: {fileID: 1762803861901120, guid: 099de803bc6efb549b95a867d18686f1, type: 2}
   waitTime: 6
   colorStart: {r: 0, g: 1, b: 0, a: 1}
   colorEnd: {r: 1, g: 0, b: 0, a: 1}

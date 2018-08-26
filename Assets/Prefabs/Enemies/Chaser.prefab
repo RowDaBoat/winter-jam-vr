@@ -386,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb35eda1aa9d49a7893df79ddb1ee61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxDeath: {fileID: 1762803861901120, guid: 099de803bc6efb549b95a867d18686f1, type: 2}
   timeAlive: 30
   speed: 4
 --- !u!114 &114508118132932788
