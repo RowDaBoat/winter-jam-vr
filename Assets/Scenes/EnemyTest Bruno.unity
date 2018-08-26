@@ -312,6 +312,11 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114280056955567658, guid: 10dac558de5cc4a3c8318c742ebf923e,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 683230533}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10dac558de5cc4a3c8318c742ebf923e, type: 2}
   m_IsPrefabAsset: 0
