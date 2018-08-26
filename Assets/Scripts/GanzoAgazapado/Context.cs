@@ -20,13 +20,13 @@ namespace GanzoAgazapado
 		void InitializeGame()
 		{
 			var enemyFactory = new EnemyFactory(player, loop);
-			var shootLogic = VRScene.Instance.shootLogic;
+			var gun = VRScene.Instance.gun;
 
 			foreach (var plan in plans.GetComponentsInChildren<SpawnPlan>())
 				plan.Configure(enemyFactory, loop);
 
-			loop.OnReady += shootLogic.Activate;
-			loop.OnStop += shootLogic.Deactivate;
+			loop.OnReady += gun.Activate;
+			loop.OnStop += gun.Deactivate;
 		}
 	}
 }
