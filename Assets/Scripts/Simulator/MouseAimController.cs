@@ -28,11 +28,19 @@ namespace GanzoAgazapado.Simulator
             var horizontalRotation = Input.GetAxis("Mouse X") * scale.x;
             var verticalRotation = Input.GetAxis("Mouse Y") * scale.y;
 
-            var rotation = head.transform.localEulerAngles;
-            rotation = rotation + new Vector3(verticalRotation, horizontalRotation, 0);
+            if (Input.GetKey(KeyCode.J))
+            {
+                var rotationHead = head.transform.localEulerAngles;
+                rotationHead = rotationHead + new Vector3(verticalRotation, horizontalRotation, 0);
+                head.transform.localEulerAngles = rotationHead;
+            }
 
-            head.transform.localEulerAngles = rotation;
-            hand.transform.localEulerAngles = rotation;
+            if (Input.GetKey(KeyCode.L))
+            {
+                var rotationHand = hand.transform.localEulerAngles;
+                rotationHand = rotationHand + new Vector3(verticalRotation, horizontalRotation, 0);
+                hand.transform.localEulerAngles = rotationHand;
+            }
         }
     }
 }
