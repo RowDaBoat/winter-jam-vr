@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalRound: 4
-  reloadTime: 2.5
+  reloadTime: 1.6
   shootLogic: {fileID: 1020891140}
   charges:
   - {fileID: 1408679279}
@@ -1291,6 +1291,8 @@ MonoBehaviour:
   - {fileID: 1647093040}
   chargedMaterial: {fileID: 2100000, guid: c935998db8aea45ff8deda6bcd2e3aa4, type: 2}
   emptyMaterial: {fileID: 2100000, guid: c86fc238bc7ea4f5bb0aff5f929765bf, type: 2}
+  fireSound: {fileID: 1754630281}
+  reloadSound: {fileID: 1754630280}
 --- !u!1 &499165156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +3670,16 @@ Transform:
 --- !u!95 &1754630279 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95134618077850380, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
+--- !u!82 &1754630280 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82167757815293112, guid: 12f38f9c031e07d48bb859f32e0d069b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754630277}
+--- !u!82 &1754630281 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82449334473976472, guid: 12f38f9c031e07d48bb859f32e0d069b,
     type: 2}
   m_PrefabInternal: {fileID: 1754630277}
 --- !u!1 &1826957459
