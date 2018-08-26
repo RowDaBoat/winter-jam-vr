@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 54184505385347364}
+  velocity: 30
 --- !u!135 &135680900349722460
 SphereCollider:
   m_ObjectHideFlags: 1

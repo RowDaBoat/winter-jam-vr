@@ -33,9 +33,7 @@ namespace GanzoAgazapado
 		Bullet FireBullet()
 		{
 			var bullet = Instantiate(bulletPrefab);
-			bullet.transform.position = gun.transform.position;
-			bullet.transform.forward = gun.transform.forward;
-			bullet.body.velocity = bullet.transform.forward * velocity;
+			bullet.FireFrom(gun.transform);
 			return bullet;
 		}
 
