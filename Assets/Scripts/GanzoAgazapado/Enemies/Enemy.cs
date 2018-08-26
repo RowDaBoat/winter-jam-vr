@@ -9,6 +9,7 @@ namespace GanzoAgazapado.Enemies
 	public class Enemy : MonoBehaviour
 	{
 		public event Action OnDeath = delegate {};
+		public GameObject fxDeath;
 
 		protected Loop loop;
 
@@ -25,6 +26,10 @@ namespace GanzoAgazapado.Enemies
 			var bullet = other.gameObject.GetComponent<Bullet>();
 
 			if (bullet != null) {
+				if (fxDeath != null)
+				{
+					GameObject.Instantiate(fxDeath, this.gameObject.transform.position, Quaternion.identity);
+				}
 				OnDeath();
 				Destroy(gameObject);
 				loop.AddScore();

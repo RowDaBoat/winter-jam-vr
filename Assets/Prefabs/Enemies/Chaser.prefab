@@ -214,9 +214,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1908767380391868}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.31}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.6986284, y: -0.1091712, z: -0.1091712, w: -0.6986284}
+  m_LocalPosition: {x: -11.61, y: 33.404663, z: -28.05}
+  m_LocalScale: {x: 3, y: 3, z: 4.3}
   m_Children:
   - {fileID: 4682969353447912}
   - {fileID: 4222739491838374}
@@ -275,7 +275,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 87b212738cbf27a45beda1aecc29618b, type: 2}
+  - {fileID: 2100000, guid: 29a00235c7ae10c4e8258ae08f01f4b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -386,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb35eda1aa9d49a7893df79ddb1ee61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxDeath: {fileID: 1762803861901120, guid: 099de803bc6efb549b95a867d18686f1, type: 2}
   timeAlive: 30
   speed: 4
 --- !u!114 &114508118132932788
