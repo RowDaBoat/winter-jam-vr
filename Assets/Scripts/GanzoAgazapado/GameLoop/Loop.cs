@@ -16,6 +16,9 @@ namespace GanzoAgazapado.GameLoop
 		public Image redDimmer;
 		public AudioSource music;
 		public AudioSource loseSound;
+		public AudioSource oneSound;
+		public AudioSource twoSound;
+		public AudioSource threeSound;
 
 		public event Action OnReady = delegate {};
 		public event Action OnStop = delegate {};
@@ -62,10 +65,13 @@ namespace GanzoAgazapado.GameLoop
 		void Start() => StartGame();
 
 		IEnumerator StartRoutine() => Do(() => ShowText("3"))
+			.Then(Do(() => threeSound.Play()))
 			.Then(Wait(1))
 			.Then(Do(() => ShowText("2")))
+			.Then(Do(() => twoSound.Play()))
 			.Then(Wait(1))
 			.Then(Do(() => ShowText("1")))
+			.Then(Do(() => oneSound.Play()))
 			.Then(Wait(1))
 			.Then(Do(() => ShowText("Agazapated Ganz!")))
 			.Then(Do(() => music.Play()))
