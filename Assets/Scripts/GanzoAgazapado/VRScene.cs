@@ -12,6 +12,7 @@ namespace GanzoAgazapado
 	    public GameObject player;
         public GameLogic gameLogic;
 	    public Gun gun;
+	    public BulletTimePowerUp bulletTimePowerUp;
 
 	    public static VRScene Instance
         {

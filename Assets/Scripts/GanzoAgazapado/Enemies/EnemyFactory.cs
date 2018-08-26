@@ -14,7 +14,7 @@ namespace GanzoAgazapado.Enemies
 			this.loop = loop;
 		}
 
-		public void Spawn(Enemy spawnEnemy, Vector3 transformPosition)
+		public Enemy Spawn(Enemy spawnEnemy, Vector3 transformPosition)
 		{
 			var enemy = Enemy.Spawn(spawnEnemy, transformPosition, player.transform);
 
@@ -28,6 +28,8 @@ namespace GanzoAgazapado.Enemies
 			if ((chaser = enemy.GetComponent<Chaser>()) != null) {
 				chaser.Configure(player, loop);
 			}
+
+			return enemy;
 		}
 	}
 }

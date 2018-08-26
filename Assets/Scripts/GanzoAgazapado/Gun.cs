@@ -18,6 +18,7 @@ namespace GanzoAgazapado
 		int round;
 
 		bool activated;
+		bool noReloadMode;
 
 		public void Activate() { activated = true; }
 		
@@ -28,12 +29,22 @@ namespace GanzoAgazapado
 			if (!activated || round == 0)
 				return;
 
-			round--;
+			if (!noReloadMode)
+				round--;
+			
 			shootLogic.Fire();
 			UpdateCharges();
 			fireSound.Play();
 		}
-		
+
+		public void NoReloadMode()
+		{
+			Reload();
+			noReloadMode = true;
+		}
+
+		public void NormalMode() => noReloadMode = false;
+
 		void Start()
 		{
 			round = 4;
