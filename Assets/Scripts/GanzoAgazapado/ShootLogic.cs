@@ -44,7 +44,7 @@ namespace GanzoAgazapado
 
 		public void SetAutoFire(bool autofire)
 		{
-			Time.timeScale = autofire ? 0.5f : 1f;
+			//autoFire = autofire;
 		}
 
 		[ContextMenu("Fire")]
