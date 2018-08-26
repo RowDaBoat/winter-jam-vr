@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731196, g: 0.38074002, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2307,6 +2307,19 @@ MonoBehaviour:
   m_modelGearVrController: {fileID: 519717952}
   m_modelOculusGoController: {fileID: 761337869}
   m_controller: 33554432
+--- !u!1 &992149206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1433731527689592, guid: c0ced0af099a6734f8a51a81b0834279,
+    type: 2}
+  m_PrefabInternal: {fileID: 1105103930}
+--- !u!45 &992149209
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992149206}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
 --- !u!1 &999009329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,23 +2606,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114278459108567380, guid: c0ced0af099a6734f8a51a81b0834279,
+    - target: {fileID: 20782009144200564, guid: c0ced0af099a6734f8a51a81b0834279,
         type: 2}
-      propertyPath: scale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278459108567380, guid: c0ced0af099a6734f8a51a81b0834279,
-        type: 2}
-      propertyPath: scale.y
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973297152606776, guid: c0ced0af099a6734f8a51a81b0834279, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973297152606776, guid: c0ced0af099a6734f8a51a81b0834279, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.57
+      propertyPath: m_ClearFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ced0af099a6734f8a51a81b0834279, type: 2}
@@ -3871,6 +3871,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1921925705419072, guid: 9721125268d0f124c89466705db1bfca,
     type: 2}
   m_PrefabInternal: {fileID: 2053444604}
+--- !u!45 &2041744271
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041744270}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
 --- !u!114 &2041744272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3934,6 +3942,81 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1447370180588566, guid: 9721125268d0f124c89466705db1bfca, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20275981163148316, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20275981163148316, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20275981163148316, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20275981163148316, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469485668594044, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20395240998065496, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20395240998065496, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20395240998065496, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20395240998065496, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20395240998065496, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469485668594044, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469485668594044, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469485668594044, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469485668594044, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20275981163148316, guid: 9721125268d0f124c89466705db1bfca,
+        type: 2}
+      propertyPath: m_BackGroundColor.a
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
