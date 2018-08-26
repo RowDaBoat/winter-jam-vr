@@ -41,8 +41,7 @@ namespace GanzoAgazapado
 
 			do {
 				foreach (var spawn in plan) {
-					var enemy = enemyFactory.Spawn(spawn.enemy, spawn.spawner.transform.position);
-					Debug.Log(bulletTimePowerUp);
+					var enemy = enemyFactory.Spawn(spawn.enemy, spawn.spawner);
 					enemy.OnDeath += bulletTimePowerUp.AddKill;
 					yield return new WaitForSeconds(spawn.nextTime);
 				}

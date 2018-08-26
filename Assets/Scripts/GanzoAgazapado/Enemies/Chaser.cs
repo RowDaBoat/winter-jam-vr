@@ -23,7 +23,7 @@ namespace GanzoAgazapado.Enemies
 		{
 			Setup();
 			StartCoroutine(Despawn());
-			StartCoroutine(Move());
+			//StartCoroutine(Move());
 			StartCoroutine(CheckCollision());
 		}
 
