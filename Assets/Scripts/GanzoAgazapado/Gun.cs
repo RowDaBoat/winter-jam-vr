@@ -12,6 +12,8 @@ namespace GanzoAgazapado
 		public Renderer[] charges;
 		public Material chargedMaterial;
 		public Material emptyMaterial;
+		public AudioSource fireSound;
+		public AudioSource reloadSound;
 
 		int round;
 
@@ -29,6 +31,7 @@ namespace GanzoAgazapado
 			round--;
 			shootLogic.Fire();
 			UpdateCharges();
+			fireSound.Play();
 		}
 		
 		void Start()
@@ -42,25 +45,23 @@ namespace GanzoAgazapado
 		{
 			yield return new WaitUntil(() => round == 0);
 			
-			Debug.Log("Reloading...");
+			reloadSound.Play();
 			StartCoroutine(ReloadAnim());
 
-			yield return new WaitForSeconds(totalRound);
-			
-			Reload();
-			Debug.Log("Reloaded!");
+			yield return new WaitForSeconds(reloadTime);
 
+			Reload();
 			StartCoroutine(Rounds());
 		}
 
 		IEnumerator ReloadAnim()
 		{
-			var chargeTime = reloadTime / (totalRound - 1);
+			var chargeTime = reloadTime / (totalRound);
 
 			for (var i = 0; i < totalRound; i++) {
 				yield return new WaitForSeconds(chargeTime);
 				charges[totalRound - i - 1].material = chargedMaterial;
-			}	
+			}
 		}
 
 		void Reload()
