@@ -24,10 +24,12 @@ namespace GanzoAgazapado
 
 		EnemyFactory enemyFactory;
 		Coroutine run;
+		BulletTimePowerUp bulletTimePowerUp;
 
-		public void Configure(EnemyFactory enemyFactory, Loop loop)
+		public void Configure(EnemyFactory enemyFactory, Loop loop, BulletTimePowerUp bulletTimePowerUp)
 		{
 			this.enemyFactory = enemyFactory;
+			this.bulletTimePowerUp = bulletTimePowerUp;
 
 			loop.OnReady += () => run = StartCoroutine(Run());
 			loop.OnStop += () => StopCoroutine(run);
@@ -39,7 +41,9 @@ namespace GanzoAgazapado
 
 			do {
 				foreach (var spawn in plan) {
-					enemyFactory.Spawn(spawn.enemy, spawn.spawner.transform.position);
+					var enemy = enemyFactory.Spawn(spawn.enemy, spawn.spawner.transform.position);
+					Debug.Log(bulletTimePowerUp);
+					enemy.OnDeath += bulletTimePowerUp.AddKill;
 					yield return new WaitForSeconds(spawn.nextTime);
 				}
 			} while (repeat);

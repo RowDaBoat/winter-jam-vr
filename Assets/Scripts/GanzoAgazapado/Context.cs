@@ -21,9 +21,10 @@ namespace GanzoAgazapado
 		{
 			var enemyFactory = new EnemyFactory(player, loop);
 			var gun = VRScene.Instance.gun;
+			var bulletTimePowerUp = VRScene.Instance.bulletTimePowerUp;
 
 			foreach (var plan in plans.GetComponentsInChildren<SpawnPlan>())
-				plan.Configure(enemyFactory, loop);
+				plan.Configure(enemyFactory, loop, bulletTimePowerUp);
 
 			loop.OnReady += gun.Activate;
 			loop.OnStop += gun.Deactivate;

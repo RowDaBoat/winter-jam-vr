@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: bb650a25edb6748f0a2da52e4ea055b8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: charserPiernas
+    100002: chaserCabeza
+    100004: chaserColumn
+    100006: chaserCuerpo
+    100008: chaserFacePlane
+    100010: chaserHandGuards
+    100012: chaserHood
+    100014: chaserLight
+    100016: //RootNode
+    100018: chaserPies
+    400000: charserPiernas
+    400002: chaserCabeza
+    400004: chaserColumn
+    400006: chaserCuerpo
+    400008: chaserFacePlane
+    400010: chaserHandGuards
+    400012: chaserHood
+    400014: chaserLight
+    400016: //RootNode
+    400018: chaserPies
+    2100000: 01 - Default
+    2300000: charserPiernas
+    2300002: chaserCabeza
+    2300004: chaserColumn
+    2300006: chaserCuerpo
+    2300008: chaserFacePlane
+    2300010: chaserHandGuards
+    2300012: chaserHood
+    2300014: chaserLight
+    2300016: chaserPies
+    3300000: charserPiernas
+    3300002: chaserCabeza
+    3300004: chaserColumn
+    3300006: chaserCuerpo
+    3300008: chaserFacePlane
+    3300010: chaserHandGuards
+    3300012: chaserHood
+    3300014: chaserLight
+    3300016: chaserPies
+    4300000: chaserColumn
+    4300002: chaserHood
+    4300004: chaserHandGuards
+    4300006: chaserLight
+    4300008: chaserCuerpo
+    4300010: charserPiernas
+    4300012: chaserPies
+    4300014: chaserCabeza
+    4300016: chaserFacePlane
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
