@@ -3801,6 +3801,11 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224559791326762330, guid: 12f38f9c031e07d48bb859f32e0d069b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136164551179531710, guid: 12f38f9c031e07d48bb859f32e0d069b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 12f38f9c031e07d48bb859f32e0d069b, type: 2}
