@@ -2947,19 +2947,19 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 1
     spawner: {fileID: 202107007}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 2
     spawner: {fileID: 1234325354}
   - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 5
     spawner: {fileID: 1044787850}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 1
     spawner: {fileID: 843477244}
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 2
     spawner: {fileID: 1728163568}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 5
     spawner: {fileID: 202107007}
   - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
@@ -2974,7 +2974,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 1
     spawner: {fileID: 1775591127}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 2
     spawner: {fileID: 1728163568}
   - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
@@ -4771,7 +4771,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 2
     spawner: {fileID: 1728163568}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 5
     spawner: {fileID: 843477244}
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
@@ -4780,7 +4780,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 2
     spawner: {fileID: 1728163568}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 5
     spawner: {fileID: 202107007}
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
@@ -4795,7 +4795,7 @@ MonoBehaviour:
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
     nextTime: 1
     spawner: {fileID: 1775591127}
-  - enemy: {fileID: 114116126126410310, guid: ce7ada37f47504a89b29cc86201482fa, type: 2}
+  - enemy: {fileID: 114723952362770952, guid: 439ee2b3dc0224ec4a689f316a15e01d, type: 2}
     nextTime: 2
     spawner: {fileID: 1728163568}
   - enemy: {fileID: 114116126126410310, guid: dbca53c853fc34183bd853e5ecca6fe6, type: 2}
@@ -5072,7 +5072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1261923271
 BoxCollider:
   m_ObjectHideFlags: 0
